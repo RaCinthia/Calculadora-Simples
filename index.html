@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculadora Simples</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="plano-de-fundo">
+      <div class="calculadora">
+          <p id="resultado"></p>
+          <table>
+              <tr>
+                  <td><button class="botao" onclick="clean()" style="background-color: rgb(219, 169, 62);">C</button></td>
+                  <td><button class="botao back" onclick="back()" style="background-color: rgb(219, 169, 62);">&lt;</button></td>
+                  <td><button class="botao" onclick="insert('/')" style="background-color: rgb(62, 62, 219);">÷</button></td>
+                  <td><button class="botao" onclick="insert('*')" style="background-color: rgb(62, 62, 219);">x</button></td>
+              </tr>
+              <tr>
+                  <td><button class="botao" onclick="insert('7')">7</button></td>
+                  <td><button class="botao" onclick="insert('8')">8</button></td>
+                  <td><button class="botao" onclick="insert('9')">9</button></td>
+                  <td><button class="botao" onclick="insert('-')" style="background-color: rgb(62, 62, 219);">-</button></td>
+              </tr>
+              <tr>
+                  <td><button class="botao" onclick="insert('4')">4</button></td>
+                  <td><button class="botao" onclick="insert('5')">5</button></td>
+                  <td><button class="botao" onclick="insert('6')">6</button></td>
+                  <td><button class="botao" onclick="insert('+')" style="background-color: rgb(62, 62, 219);">+</button></td>
+              </tr>
+              <tr>
+                  <td><button class="botao" onclick="insert('1')">1</button></td>
+                  <td><button class="botao" onclick="insert('2')">2</button></td>
+                  <td><button class="botao" onclick="insert('3')">3</button></td>
+                  <td rowspan="2"><button class="botao" onclick="equals()" style="height: 102px; background-color: rgb(219, 169, 62);">=</button></td>
+              </tr>
+              <tr>
+                  <td colspan="2"><button class="botao" onclick="insert('0')" style="width: 102px;">0</button></td>
+                  <td><button class="botao" onclick="insert('.')">.</button></td>
+              </tr>
+          </table>
+      </div>
+  </div>
+  
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
